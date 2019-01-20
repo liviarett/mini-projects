@@ -1,0 +1,149 @@
+/* UNIVERSAL STYLES */
+html, body {
+    font-size: 4.5px;
+    font-family: 'Raleway', sans-serif;
+    background-image: url(../Images/spiritpatternbackground.jpg);
+    background-size: 10%;
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+}
+
+body {
+    height: 100%;
+}
+
+h1 {
+    font-size: 2.0rem;
+    font-weight: 900;
+    color: rgb(255, 100, 120);
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: rgb(255, 100, 120);
+}
+
+h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(255, 100, 120);
+    padding: 1% 0;
+}
+
+p {
+    font-size: 1rem;
+    color: rgb(200, 130, 130);
+}
+
+a, a:visited, a:active  {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: none;
+    color: rgb(220, 100, 120);
+}
+/*CONTAINERS */
+
+.main-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.heading {
+    text-align: center;
+    width: 20%;
+    padding: 0 0 0 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.game {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1% 5%;
+}
+
+
+.noclick {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    z-index: 9000; /* or maybe higher */
+    background-color: transparent;
+}
+
+/* CARDS */
+
+.card {
+    font-weight: 900;
+    font-size: 7rem;
+    color: white;
+    height: 10rem;
+    width: 23%;
+    border: 2.5px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    margin: 3px 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.img-background {
+    background-image: url(../Images/spiritpattern.jpg);
+    background-size: 50%;
+}
+
+.imgvalue {
+    min-width: 100%;
+    max-width: auto;
+    min-height: 100%;
+    max-height: 110%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+
+/*BUTTONS */
+
+.playagain {
+    padding: 6%;
+    margin: 7% 6%;
+    border-radius: 14px;
+    background-color: rgb(245, 100, 120);
+    color: white;
+    font-weight: 600;
+    font-size: 1.4rem;
+    letter-spacing: 0.08rem;
+    cursor: pointer;
+    visibility: hidden;
+    border: 2px solid rgba(255, 255, 255,0.5);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+}
+
+.playagain:hover {
+    background-color: rgb(230, 120, 120);
+}
+
+.playagain:active {
+    background-color: rgb(210, 100, 100);
+}
+
+.playvideo {
+    cursor: pointer;
+}

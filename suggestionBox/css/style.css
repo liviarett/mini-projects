@@ -1,0 +1,217 @@
+/*
+blue
+rgba(19, 57, 71, 1)
+pink
+rgba(159, 2, 62, 1)
+yellow
+rgba(255, 181, 60, 1)
+purple
+rgba(39, 13, 43, 1)
+orange
+rgba(166, 51, 31, 1)
+
+
+* {
+	border: 1px solid white;
+}*/
+
+/* 
+MAIN
+*/
+
+body, html {
+	height: auto;
+	width: 100%;
+	background-color: rgba(255, 181, 60, 1);
+	background: repeating-linear-gradient(
+  to right,
+  rgba(255, 181, 60, 1),
+  rgba(255, 181, 60, 1) 2px,
+  rgba(245, 171, 52, 0.8) 2px,
+  rgba(245, 171, 52, 0.8) 5px
+);
+	font-family: Dosis, sans-serif;
+	font-size: 7px;
+	color: rgba(39, 13, 43, 1);
+}
+
+.header {
+	font-family: 'Love Ya Like A Sister';
+	color: rgba(159, 2, 62, 1);
+	text-shadow: -1px 0 rgba(255, 181, 60, 0.5), 0 1px rgba(255, 181, 60, 0.5), 1px 0 rgba(255, 181, 60, 0.5), 0 -1px rgba(255, 181, 60, 0.5);
+	text-align: center;
+	width: 100%;
+	padding: 1.5%;
+	margin-top: 0;
+	margin-bottom: 2%;
+	background-color: rgba(19, 57, 71, 1);
+	box-shadow: 0px 2px 6px rgba(39, 13, 43, 1);
+}
+
+.container-fluid {
+	display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.post {
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+	justify-content: space-between;
+	width: 30%;
+	margin: 1rem auto;
+	padding: 1.2rem 1.2rem;
+	background-color: rgba(255, 181, 60, 1);
+	border: 1px solid rgba(159, 2, 62, 1);
+	box-shadow: 0px 0px 13px rgba(166, 51, 31, 0.2);
+	text-align: center;
+}
+
+.post:hover {
+	background-color: rgba(245, 171, 52, 1);
+}
+.post-title {
+	font-weight: 500;
+}
+
+a, a.comments-link {
+	color: rgba(166, 51, 31, 1);
+	text-decoration: none;
+}
+
+a:hover, a.comments-link:hover {
+	color: rgba(150, 2, 50, 1);
+	text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
+	text-decoration: none;
+}
+
+.comments-link {
+	margin-right: 5px;
+}
+
+.glyphicon-plus-sign {
+	color: rgba(166, 51, 31, 1);
+	cursor: pointer;
+}
+
+.glyphicon-plus-sign:hover {
+	color: rgba(150, 2, 50, 1);
+	text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
+}
+
+.submit-comment form, .submit-suggestion form {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+h1 {
+	font-size: 3.7rem;
+}
+h3 {
+	font-size: 1.6rem;
+	color: rgba(159, 2, 62, 1);
+}
+input[type="text"]::placeholder {
+	font-size: 1rem;
+	color: rgba(39, 13, 43, 0.6);
+}
+
+input[type="text"] {
+	width: 35rem;
+	height: 3rem;
+	background-color: rgba(255, 200, 85, 1);
+	color: rgba(39, 13, 43, 1);
+	border: none;
+	text-align: center;
+	box-shadow: inner 0px 0px 10px black, ;
+}
+
+.btn-primary {
+	background-color: rgba(19, 57, 71, 1);
+	color: rgba(255, 181, 60, 1);
+	font-size: 1rem;
+}
+
+.btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+	background-color: rgba(13, 47, 61, 1);
+	color: rgba(255, 181, 60, 1);
+}
+
+/* 
+POST PAGE
+*/
+.title-comment-page {
+	font-size: 1.7rem;
+	width: 100%;
+	text-align: center;
+	font-weight: 500;
+	padding: 1.5rem 1rem;
+}
+.main {
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.back {
+	float: left;
+	margin: auto 0;
+	margin-left: 1rem;
+	font-size: 3.5rem;
+}
+
+.comment {
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+	justify-content: space-between;
+	width: 25%;
+	margin: 1rem auto;
+	padding: 1.2rem 1.2rem;
+	background-color: rgba(255, 181, 60, 0.9);
+	border: 1px solid rgba(159, 2, 62, 1);
+	box-shadow: 0px 0px 13px rgba(166, 51, 31, 0.2);
+	text-align: center;
+}
+
+.comment-body {
+	font-weight: 400;
+	font-style: italic;
+}
+/*
+@media (max-width: 700px) {
+	body, html {
+	height: auto;
+	width: auto;
+}
+	.container-fluid {
+    flex-flow: column wrap;
+    justify-content: center;
+}
+	.post {
+	flex-flow: column wrap;
+	align-items: center;
+	width: 100%;
+	margin: 0.5rem auto;
+}
+	input[type="text"] {
+	width: 15rem;
+	height: 5rem;
+	background-color: rgba(255, 200, 85, 1);
+	color: rgba(39, 13, 43, 1);
+	border: none;
+	text-align: center;
+	box-shadow: inner 0px 0px 10px black, ;
+}
+	.main {
+	flex-flow: column wrap;
+	padding: 0 1rem;
+}
+
+    .comment {
+	flex-flow: column wrap;
+	width: 100%;
+}
+}
